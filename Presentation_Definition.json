@@ -1,0 +1,79 @@
+{
+  "response_uri": "http://localhost:5000/verification/callback",
+  "aud": "https://self-issued.me",
+  "client_id_scheme": "did",
+  "iss": "did:web:verifier.example.com",
+  "response_type": "vp_token",
+  "presentation_definition": {
+    "id": "presentation-definition-id",
+    "input_descriptors": [
+      {
+        "id": "input-descriptor-id",
+        "name": "Verifiable Credential Check",
+        "purpose": "Verify the integrity of the SD-JWT Verifiable Credential",
+        "constraints": {
+          "fields": [
+            {
+              "path": [
+                "$.credentialSubject.id"
+              ],
+              "optional": false,
+              "filter": {
+                "pattern": "did:example:123456789abcdefghi",
+                "type": "string"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "format": {
+      "vc+sd-jwt": {
+        "sd-jwt_alg_values": [
+          "ES256"
+        ],
+        "kb-jwt_alg_values": [
+          "ES256"
+        ]
+      }
+    }
+  },
+  "state": "state-unique-id-12345",
+  "nonce": "nonce-value-abcde12345",
+  "client_id": "did:web:verifier.example.com",
+  "client_metadata": {
+    "client_name": "Verifier Example",
+    "subject_syntax_types_supported": [
+      "did:web",
+      "did:example",
+      "did:key"
+    ],
+    "vp_formats": {
+      "jwt_vc_json": {
+        "alg": [
+          "ES256",
+          "ES256K",
+          "EdDSA"
+        ]
+      },
+      "jwt_vp_json": {
+        "alg": [
+          "ES256",
+          "ES256K",
+          "EdDSA"
+        ]
+      },
+      "ldp_vc": {
+        "proof_type": [
+          "EcdsaSecp256k1Signature2019"
+        ]
+      },
+      "ldp_vp": {
+        "proof_type": [
+          "EcdsaSecp256k1Signature2019"
+        ]
+      }
+    }
+  },
+  "response_mode": "direct_post"
+}
