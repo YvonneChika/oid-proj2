@@ -1,0 +1,162 @@
+{
+    "response_uri": "https://e3b6-185-210-1-10.ngrok-free.app/verification/callback",
+    "aud": "https://self-issued.me",
+    "client_id_scheme": "did",
+    "iss": "did:web:did.adaptivespace.io:nem:apple",
+    "response_type": "vp_token",
+    "presentation_definition": {
+      "id": "presentation definition id",
+      "input_descriptors": [
+        {
+          "id": "input descriptor id",
+          "constraints": {
+            "fields": [
+              {
+                "path": [
+                  "$.name"
+                ],
+                "optional": false,
+                "filter": {
+                  "pattern": "Darkovojs",
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "name": "input descriptor name",
+          "purpose": "input descriptor purp"
+        }
+      ],
+      "format": {
+        "vc+sd-jwt": {
+          "sd-jwt_alg_values": [
+            "EdDSA"
+          ],
+          "kb-jwt_alg_values": [
+            "EdDSA"
+          ]
+        }
+      }
+    },
+    "state": "ce43f392-22ae-43f3-93d5-4f83626f6509",
+    "nonce": "8QATsP4bcKpch3hQhl5r",
+    "client_id": "did:web:did.adaptivespace.io:nem:apple",
+    "client_metadata": {
+      "client_name": "nemanja_jbt",
+      "subject_syntax_types_supported": [
+        "did:btcr",
+        "did:sov",
+        "did:indy",
+        "did:v1",
+        "did:stack",
+        "did:web",
+        "did:ethr",
+        "did:ens",
+        "did:peer",
+        "did:eosio",
+        "did:jolo",
+        "did:hcr",
+        "did:elem",
+        "did:github",
+        "did:ccp",
+        "did:ont",
+        "did:kilt",
+        "did:factom",
+        "did:io",
+        "did:bba",
+        "did:schema",
+        "did:ion",
+        "did:gatc",
+        "did:icon",
+        "did:vaa",
+        "did:unisot",
+        "did:sol",
+        "did:lit",
+        "did:ebsi",
+        "did:emtrust",
+        "did:meta",
+        "did:tz",
+        "did:key",
+        "did:pkh",
+        "did:orb",
+        "did:oyd",
+        "did:moncon",
+        "did:dock",
+        "did:mydata",
+        "did:dns",
+        "did:everscale",
+        "did:ala",
+        "did:cheqd",
+        "did:com",
+        "did:dyne",
+        "did:jwk",
+        "did:kscirc",
+        "did:iscc",
+        "did:ev",
+        "did:iid",
+        "did:evan",
+        "did:bid",
+        "did:polygonid",
+        "did:pdc",
+        "did:tys",
+        "did:plc",
+        "did:evrc",
+        "did:keri",
+        "did:webs",
+        "did:content",
+        "did:algo",
+        "did:itn",
+        "did:iota",
+        "did:iden3"
+      ],
+      "vp_formats": {
+        "jwt_vc_json": {
+          "alg": [
+            "RS256",
+            "RS384",
+            "RS512",
+            "PS256",
+            "PS384",
+            "PS512",
+            "ES256",
+            "ES256K",
+            "ES384",
+            "ES512",
+            "EdDSA",
+            "Ed25519",
+            "Ed448"
+          ]
+        },
+        "jwt_vp_json": {
+          "alg": [
+            "RS256",
+            "RS384",
+            "RS512",
+            "PS256",
+            "PS384",
+            "PS512",
+            "ES256",
+            "ES256K",
+            "ES384",
+            "ES512",
+            "EdDSA",
+            "Ed25519",
+            "Ed448"
+          ]
+        },
+        "ldp_vc": {
+          "proof_type": [
+            "Ed25519Signature2018",
+            "EcdsaSecp256k1Signature2019"
+          ]
+        },
+        "ldp_vp": {
+          "proof_type": [
+            "Ed25519Signature2018",
+            "EcdsaSecp256k1Signature2019"
+          ]
+        }
+      }
+    },
+    "response_mode": "direct_post"
+}
