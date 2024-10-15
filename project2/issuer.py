@@ -1,7 +1,7 @@
 import os
 import json
 import hashlib
-import base64  # <-- Add this line to import base64
+import base64  
 import jwt
 from cryptography.hazmat.primitives.asymmetric import ec
 from cryptography.hazmat.backends import default_backend
